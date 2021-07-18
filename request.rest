@@ -1,0 +1,27 @@
+GET http://localhost:8080/products
+
+###
+GET http://localhost:8080/products/60f36cd3a57eb139446199c8
+
+###
+POST http://localhost:8080/products
+content-type: application/json
+
+{
+    "name": "Rsomethin to delete",
+    "price": 1050.99,
+    "stock": 2,
+    "imgUrl": "https://i.pcmag.com/imagery/reviews/03vLXu6mlZcGUGY0H1lPvmv-19..1599845141.jpg"
+}
+
+###
+DELETE http://localhost:8080/products/60f379dd9a2813264cd5af24
+
+###
+PATCH http://localhost:8080/products/60f36cd3a57eb139446199c8
+Content-Type: application/json
+
+{
+    "name": "RTX 3080ti",
+    "stock": 4
+}
