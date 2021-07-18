@@ -10,6 +10,10 @@ import {
   deleteProductById,
 } from "../controllers/products.controller"
 
+// middleware for user check
+import { authJwt } from '../middlewares'
+
+
 // find Product by id middleware
 async function findProductById(req, res, next){
   let product
@@ -28,9 +32,9 @@ async function findProductById(req, res, next){
 // ROUTES
 
 router.get("/", getProducts)
-router.post("/", createProduct)
+router.post("/", [authJwt.verifyToken, authJwt.isAdmin], createProduct)
 router.get("/:productId", findProductById, getProductById)
-router.patch("/:productId", findProductById, updateProductById)
-router.delete("/:productId", findProductById, deleteProductById)
+router.patch("/:productId", [authJwt.verifyToken, authJwt.isAdmin, findProductById], updateProductById)
+router.delete("/:productId",[authJwt.verifyToken, authJwt.isAdmin, findProductById], deleteProductById)
 
 export default router

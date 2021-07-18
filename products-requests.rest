@@ -6,22 +6,25 @@ GET http://localhost:8080/api/products/60f36cd3a57eb139446199c8
 ###
 POST http://localhost:8080/api/products
 content-type: application/json
+x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYwZjNhYzQ2MGU1YjBlMjk4NGJkMmM2NiIsImlhdCI6MTYyNjU4NjY2MSwiZXhwIjoxNjI2NjczMDYxfQ.DvmY68ljPztq8Nc-6iIKmq_gqvx2cCAzpPj-IjDYvPo
 
 {
-    "name": "Rsomethin to delete",
+    "name": "Rjkbmsomethin to delete6",
     "price": 1050.99,
     "stock": 2,
     "imgUrl": "https://i.pcmag.com/imagery/reviews/03vLXu6mlZcGUGY0H1lPvmv-19..1599845141.jpg"
 }
 
 ###
-DELETE http://localhost:8080/api/products/60f379dd9a2813264cd5af24
+DELETE http://localhost:8080/api/products/60f3c028f384e61becf629bb
+x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYwZjNhYzQ2MGU1YjBlMjk4NGJkMmM2NiIsImlhdCI6MTYyNjU4NzU0OCwiZXhwIjoxNjI2NjczOTQ4fQ.7b7Dcm37G0ijLXs2GpE_l0yszO82AxJdkv4PFknAj6o
 
 ###
 PATCH http://localhost:8080/api/products/60f36cd3a57eb139446199c8
 Content-Type: application/json
+x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYwZjNjOTYwMzU4YzI3MTVhODdhMDc4ZiIsImlhdCI6MTYyNjU4OTYwMywiZXhwIjoxNjI2Njc2MDAzfQ.iYAVevLUVCG8mpKkdbNmyeF4ol-A-WMWBRQ0_XXA26I
 
 {
     "name": "RTX 3080ti",
-    "stock": 4
+    "stock": 3
 }
