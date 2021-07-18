@@ -1,1 +1,21 @@
 POST http://localhost:8080/api/auth/signin
+Content-Type: application/json
+
+{
+  "email": "david@example.com",
+  "password": "aaaaaa",
+  "roles": "admin"
+}
+
+###
+POST http://localhost:8080/api/auth/signup
+Content-Type: application/json
+
+{
+  "email": "david@example.com",
+  "password": "aaaaaa",
+  "name": "David",
+  "surname": "Coperfield",
+  "address": " NY 13637",
+  "roles": "admin"
+}
