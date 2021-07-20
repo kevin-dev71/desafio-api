@@ -9,7 +9,7 @@ export const verifyToken = async (req, res, next) => {
 
     if (!token) return res.status(403).json({ message: "No Token provided" })
 
-    jwt.verify(token, config.SECRET, async (err, decoded) => {
+    jwt.verify(token, config.ACCESS_TOKEN_SECRET, async (err, decoded) => {
       if (err) return res.status(400).json({ message: "Invalid Token" })
 
       const user = await User.findById(decoded.id, { password: 0 })
@@ -37,4 +37,11 @@ export const isAdmin = async (req, res, next) => {
   }
 
   return res.status(403).json({ message: "Require Admin Role"})
+}
+
+export const isAuth = async (req, res, next) => {
+  const user = await User.findById(req.userId) // req.userId is seeted in verifytoken middleware
+  req.user = user
+  console.log("from authJwt: ", user)
+  next()
 }

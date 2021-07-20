@@ -1,0 +1,7 @@
+POST http://localhost:8080/api/order
+content-type: application/json
+x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYwZjZkOGIzMmFiMDBmMzAzNDc4MGE5OCIsImlhdCI6MTYyNjc5MDA4NywiZXhwIjoxNjI2ODc2NDg3fQ.gPIxMheWQHlytyQ117rHdJ5oE0NfxvNwdDeF-Gj5IxY
+
+{
+  "name": "aaada"
+}
