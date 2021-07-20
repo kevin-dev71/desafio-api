@@ -1,6 +1,7 @@
 import mongoose from 'mongoose'
+import config from './config'
 
-mongoose.connect("mongodb://localhost/desafiodb", {
+mongoose.connect(config.MONGODB_URL, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
   useCreateIndex: true

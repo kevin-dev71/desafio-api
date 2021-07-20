@@ -1,6 +1,6 @@
 import app from './app'
 import './database'
+import config from './config'
+app.listen(config.PORT)
 
-app.listen(8080)
-
-console.log("Server listen on port ", 8080)
+console.log("Server listen on port ", config.PORT)
