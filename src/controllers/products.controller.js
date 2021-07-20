@@ -10,7 +10,7 @@ export const createProduct = async (req, res) => {
 
     res.status(201).json(productSaved)
   } catch (error) {
-    res.status(400).json({ message: error.message })
+    res.status(400).json({ message: error.message, err: error.message })
   }
 }
 
@@ -19,7 +19,7 @@ export const getProducts = async (req, res) => {
     const products = await Product.find()
     res.json(products)
   } catch (error) {
-    res.status(400).json({ message: error.message })
+    res.status(400).json({ message: error.message, err: error.message })
   }
 }
 
@@ -45,7 +45,7 @@ export const updateProductById = async (req, res) => {
     const updatedProduct = await res.product.save()
     res.json(updatedProduct)
   } catch (error) {
-    res.status(400).json({ message: error.message })
+    res.status(400).json({ message: error.message, err: error.message })
   }
 }
 
@@ -54,6 +54,6 @@ export const deleteProductById = async (req, res) => {
     await res.product.remove()
     res.status(204).json({ message: 'Product deleted'})
   } catch (error) {
-    res.status(500).json({ message: error.message })
+    res.status(500).json({ message: error.message, err: error.message })
   }
 }

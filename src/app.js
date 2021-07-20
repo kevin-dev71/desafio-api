@@ -7,6 +7,7 @@ import {createRoles} from './libs/initialSetup'
 import productsRoutes from './routes/products.routes'
 import authRoutes from './routes/auth.routes'
 import userRoutes from './routes/user.routes'
+import cookieParser from 'cookie-parser'
 
 const app = express()
 createRoles() // aad database with the admin role and user role for User Model
@@ -15,6 +16,7 @@ app.use(morgan('dev'))
 
 app.use(express.json())
 app.use(cors({ origin: true }))
+app.use(cookieParser());
 
 app.get('/' , (req, res) => {
   res.json({

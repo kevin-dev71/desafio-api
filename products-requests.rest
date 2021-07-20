@@ -9,10 +9,10 @@ content-type: application/json
 x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYwZjNhYzQ2MGU1YjBlMjk4NGJkMmM2NiIsImlhdCI6MTYyNjU4NjY2MSwiZXhwIjoxNjI2NjczMDYxfQ.DvmY68ljPztq8Nc-6iIKmq_gqvx2cCAzpPj-IjDYvPo
 
 {
-    "name": "Rjkbmsomethin to delete6",
+    "name": "Iphone 6S Apple",
     "price": 1050.99,
     "stock": 2,
-    "imgUrl": "https://i.pcmag.com/imagery/reviews/03vLXu6mlZcGUGY0H1lPvmv-19..1599845141.jpg"
+    "imgUrl": "https://drive.google.com/uc?id=18KkAVkGFvaGNqPy2DIvTqmUH_nk39o3z"
 }
 
 ###

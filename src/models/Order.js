@@ -1,9 +1,19 @@
 import { Schema , model } from 'mongoose'
 
 const orderSchema = new Schema({
-  products: [{ref: "Product" , type:Schema.Types.ObjectId}]
+  cart: Array,
+  total: Number,
+  user: {
+    type: mongoose.Types.ObjectId,
+    ref: 'User'
+  },
+  delivered: { 
+    type: Boolean,
+    default: false
+  }
 } , {
-  versionKey: false
+  versionKey: false,
+  timestamps: true
 })
 
 export default model("Order" , orderSchema)
