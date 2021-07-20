@@ -4,9 +4,10 @@ const orderSchema = new Schema({
   cart: Array,
   total: Number,
   user: {
-    type: mongoose.Types.ObjectId,
+    type: Schema.Types.ObjectId,
     ref: 'User'
   },
+  address: String,
   delivered: { 
     type: Boolean,
     default: false

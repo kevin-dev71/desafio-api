@@ -6,7 +6,7 @@ GET http://localhost:8080/api/products/60f36cd3a57eb139446199c8
 ###
 POST http://localhost:8080/api/products
 content-type: application/json
-x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYwZjNhYzQ2MGU1YjBlMjk4NGJkMmM2NiIsImlhdCI6MTYyNjU4NjY2MSwiZXhwIjoxNjI2NjczMDYxfQ.DvmY68ljPztq8Nc-6iIKmq_gqvx2cCAzpPj-IjDYvPo
+x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYwZjRiYmFkNzIyYjIyMGE4YzMxMzM1NSIsImlhdCI6MTYyNjc4OTg0MywiZXhwIjoxNjI2ODc2MjQzfQ.OdAuLFN0ZNNDFgQnmh1NnSBb3qcBfKOhrCU-mbWMq34
 
 {
     "name": "Iphone 6S Apple",
